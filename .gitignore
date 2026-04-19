@@ -1,0 +1,10 @@
+# Machine-specific
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+*.swp
+*~
