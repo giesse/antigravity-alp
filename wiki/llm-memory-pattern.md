@@ -23,7 +23,7 @@ Following Karpathy's blueprint, the project is divided into three layers:
 
 ## 🛠️ Operational Protocol
 
-We use the **[/update-wiki](.agent/workflows/update-wiki.md)** workflow to maintain this layer:
+We use the **[/wrap-up](.agent/workflows/wrap-up.md)** workflow to maintain this layer:
 - **Ingest**: Drops new sources into the collection and "compiles" them into the wiki graph.
 - **Lint**: Periodically scans for contradictions, stale claims, or orphaned pages.
 - **Capture**: Valuable query results (analyses, comparisons) are filed back into the wiki as permanent pages.
