@@ -22,15 +22,23 @@ See [AGENTS.md](AGENTS.md) for the full workflow orchestration rules.
 | `.agent/` | Antigravity IDE workflows |
 | `TODO.md` | Active task management (Priority 1, 2, 3) |
 
-## Integrating ALP into Your Project
+## Starting a New Project
 
-To add these workflows and agent rules to an existing project:
+Antigravity includes a scaffolding generator to instantly initialize new, clean projects with the latest workflows and a pre-seeded AI knowledge base.
 
-1. **Copy Workflows**: Copy the `.agent/` directory to your project root.
-2. **Setup Rules**: Copy `AGENTS.md` and customize the model preferences if needed.
-3. **Initialize Memory**: Create an empty `wiki/` directory.
-4. **Adopt the Book**: Start moving high-level logic into Markdown files at the root and use the `/implement` workflow to generate code.
+**⚠️ WARNING: Destructive Operation**  
+The scaffolding script should **only be used to initialize empty directories**. It will blindly overwrite project-specific files like `README.md`, `TODO.md`, and `wiki/log.md`. Do not use this script to update an existing downstream project unless you are completely wiping it.
+
+To create a new project:
+```bash
+./bin/scaffold.sh <ProjectName> ../path-to-new-project
+```
+
+This will:
+1. Mirror the `.agent/` workflows.
+2. Initialize a `wiki/` with foundational ALP knowledge.
+3. Generate personalized boilerplate (`README.md`, `TODO.md`, etc.).
 
 ## Contributing
 
-This is the "work" repository. If you are looking for a clean starting point, use the Antigravity ALP Template repository.
+This is the framework development hub. If you want to use my workflows in Google Antigravity, generate a new project using the scaffolding tool above.

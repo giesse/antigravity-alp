@@ -13,3 +13,9 @@ Chronological record of knowledge ingestion and maintenance.
 - Established a Priority 1/2/3 structure for task management in `TODO.md`.
 - Consolidated `/update-wiki` into a unified `/wrap-up` workflow.
 - Established global Antigravity Knowledge Items (KIs) for Task Management, LLM Wiki, and ALP Methodology.
+
+## [2026-04-22] feat | scaffolding & alp stress-test
+- Implemented **bin/scaffold.sh** for project initialization using "Live Blueprint" approach.
+- Created **seed-wiki/** containing foundational project DNA.
+- **Learnings**: Identified a major logic leak in the ALP guardrails. The swarm bypassed the Docs-First requirement because it was narrowly scoped to `src/` and failed to trigger for `bin/` script development. 
+- **ADR**: Transitioned from a static template repository to a "Live Scaffolding" generator to prevent version drift.

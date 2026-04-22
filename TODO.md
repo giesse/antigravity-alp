@@ -3,10 +3,15 @@
 ## Priority 1: What we are working on right now
 - [x] Update README and project structure (Current Task).
 - [x] Establish global Knowledge Items for ALP patterns.
+- [x] Implement scaffolding generator (`bin/scaffold.sh`) and `seed-wiki/`.
+- [ ] Backfill the ALP Root Spec for the 'bin/scaffold.sh' logic (Technical Debt).
+- [ ] Enforce ALP rules better; user MUST use /implement instead of proceed on implementation plan; also remove the references to src dir as that is project dependent (and in here we ended up putting code in bin/ !)
 - [ ] Implement Knowledge Retrieval checkpoint validations in workflows.
 - [ ] Refine auto-updating logic for `wiki/log.md`.
 
 ## Priority 2: What we'll work on next
+- [ ] Create a separate Antigravity Demo repository (batteries-included example).
+- [ ] Build an upgrade/sync mechanism for existing downstream projects (selective merge).
 - [ ] Draft advanced integration tutorials for complex project architectures.
 - [ ] Add support for multiple concurrent ALP modules in large repos.
 
