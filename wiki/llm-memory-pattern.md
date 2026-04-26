@@ -16,7 +16,7 @@ Most AI document systems are stateless: they read raw data at query time and for
 Following Karpathy's blueprint, the project is divided into three layers:
 
 1. **Raw Sources (`wiki/sources/*.md`)**: Immutable source documents. The ground truth.
-2. **The Managed Wiki (`wiki/*.md`)**: Living Markdown files owned by the AI. Interlinked via `[[wiki-links]]`.
+2. **The Managed Wiki (`wiki/*.md`)**: Living Markdown files owned by the AI. Interlinked with wiki-style links.
 3. **The Schema (`AGENTS.md`)**: The "Contract" telling the AI how to maintain the wiki.
 
 ---

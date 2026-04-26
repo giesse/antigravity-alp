@@ -5,6 +5,10 @@
 - [x] Establish global Knowledge Items for ALP patterns.
 - [x] Implement scaffolding generator (`bin/scaffold.sh`) and `seed-wiki/`.
 - [ ] Backfill the ALP Root Spec for the 'bin/scaffold.sh' logic (Technical Debt).
+- [ ] Fix `bin/scaffold.sh` source path resolution so it works when launched outside the repo root.
+- [ ] Add Windows-compatible scaffolding support.
+- [ ] Add safe scaffold modes: fail on existing targets by default, plus explicit `--force` / update mode for template repo automation.
+- [ ] Ensure scaffolded projects preserve core swarm/wiki context, including 3-tier role discipline and ADR baseline.
 - [ ] Enforce ALP rules better; user MUST use /implement instead of proceed on implementation plan; also remove the references to src dir as that is project dependent (and in here we ended up putting code in bin/ !)
 - [ ] Implement Knowledge Retrieval checkpoint validations in workflows.
 - [ ] Refine auto-updating logic for `wiki/log.md`.
