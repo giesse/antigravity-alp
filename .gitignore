@@ -8,3 +8,11 @@ Thumbs.db
 .vscode/
 *.swp
 *~
+
+# Generated presentation media
+alp-explainer/images/*
+alp-explainer/audio/*
+alp-explainer/video/*
+!alp-explainer/images/.gitkeep
+!alp-explainer/audio/.gitkeep
+!alp-explainer/video/.gitkeep
