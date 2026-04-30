@@ -24,7 +24,11 @@ Due to current programmatic limitations, model switching is a user-mediated proc
 1. An agent declares its intent to escalate (e.g., "I need an Architectural Review from the Advisor").
 2. The agent ensures the conversation history contains all necessary context.
 3. The USER manually switches the model in the IDE dropdown.
-4. The new tier picks up the task by reading the recent history.
+4. **Initialize**: Once the model is switched, the USER (or the agent) MUST run the appropriate role workflow:
+    - `/executor` (Gemini Flash)
+    - `/advisor` (Gemini Pro)
+    - `/genius` (Claude Opus)
+5. The new tier picks up the task by reading the recent history and acknowledging its specific constraints.
 
 ---
 

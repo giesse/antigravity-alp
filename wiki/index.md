@@ -23,3 +23,4 @@ Institutional memory for the Antigravity Project.
 | 2026-04-19 | 3-Tier Execution | Formalized Model Escalation (Flash -> Pro -> Claude). |
 | 2026-04-19 | Memory Layer | Initialized the Managed Wiki as System 2 memory. |
 | 2026-04-26 | Guardrail Ownership | Adopted Book-side artifact ownership and implementation-artifact-wide ALP checks. |
+| 2026-04-30 | Role Initialization | Implemented explicit role-switching workflows (/executor, /advisor, /genius) to enforce constraints during handoffs. |

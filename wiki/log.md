@@ -24,3 +24,8 @@ Chronological record of knowledge ingestion and maintenance.
 - Reviewed the framework repo and identified scaffold risks: destructive overwrite behavior, repo-root launch assumptions, missing Windows support, and incomplete downstream wiki context.
 - Added Priority 1 follow-ups to `TODO.md` for source path resolution, Windows scaffolding, safe scaffold modes, and preserving swarm/wiki context.
 - Distilled the ownership decision into [[alp-guardrails-and-ownership]]: keep artifact ownership primarily in the ALP Book, avoid mandatory code back-links for now, and expand `/implement` rules to cover all implementation artifacts rather than only `src/`.
+
+## [2026-04-30] feat | role-switching workflows
+- Created explicit workflows (`/executor`, `/advisor`, `/genius`) to enforce 3-tier swarm discipline.
+- Updated the **Manual Handoff Protocol** to require model initialization via these workflows.
+- **Learnings**: Manual constitutional text in `AGENTS.md` is too easy for LLMs to ignore; injecting role-specific instructions as an immediate follow-up to a model switch is a much stronger "context anchor."

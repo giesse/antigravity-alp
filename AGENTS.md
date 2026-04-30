@@ -47,7 +47,11 @@ Documentation is the source of truth. Code is an artifact.
 When the current agent needs a different model's capabilities:
 1. **Declare**: State what you need and which tier should handle it (Advisor or Genius).
 2. **Request**: Ask the USER to switch the model in the IDE dropdown.
-3. **Continue**: The new model has the full conversation history automatically.
+3. **Initialize**: Once the model is switched, the USER (or the agent itself if prompted) MUST run the appropriate role workflow to snap the model into character:
+    - `/executor` for Gemini Flash
+    - `/advisor` for Gemini Pro
+    - `/genius` for Claude Opus
+4. **Continue**: The new model has the full conversation history automatically.
 4. **Role Discipline**: 
     - **Genius/Advisor**: Focused on architectural review, planning, and task-listing. They generally avoid large file edits or terminal execution.
     - **Executor**: The primary "doer" who executes the plans provided by the higher tiers.

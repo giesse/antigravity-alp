@@ -9,6 +9,7 @@
 - [ ] Add Windows-compatible scaffolding support.
 - [ ] Add safe scaffold modes: fail on existing targets by default, plus explicit `--force` / update mode for template repo automation.
 - [ ] Ensure scaffolded projects preserve core swarm/wiki context, including 3-tier role discipline and ADR baseline.
+- [x] Create and enforce role-switching workflows (/executor, /advisor, /genius) to strengthen the 3-tier swarm discipline.
 - [ ] Enforce ALP rules better; user MUST use /implement instead of proceed on implementation plan; also remove the references to src dir as that is project dependent (and in here we ended up putting code in bin/ !)
 - [ ] Implement Knowledge Retrieval checkpoint validations in workflows.
 - [ ] Refine auto-updating logic for `wiki/log.md`.
